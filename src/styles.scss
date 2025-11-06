@@ -1,5 +1,7 @@
+/* imports */
 @use 'tailwindcss';
 
+/* set das fontes */
 @font-face {
 	font-family: 'Inter';
 	src: url('/assets/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
@@ -48,6 +50,20 @@
 	font-display: swap;
 }
 
+/* personalização dos estilos tailwind css */
+@theme {
+	--font-display: 'Poppins', 'sans-serif';
+	--font-sans: 'Inter', 'sans-serif';
+
+	--color-destaque: #c2410c;
+	--color-n1: #faf9f6;
+	--color-n2: #c7c4bf;
+	--color-n3: #918d8a;
+	--color-n4: #4d4a48;
+	--color-fundo: #1a1716;
+}
+
+/* preset html base */
 html,
 body {
 	margin: 0;
